@@ -1,4 +1,4 @@
-function add(numString) {
+ function add(numString) {
     if(numString === '') return 0;
     const numArray = numString.split(',');
     return numArray.map((num) => parseInt(num)).reduce((acc, val) => {
@@ -8,3 +8,5 @@ function add(numString) {
 
 const sum = add('5,6');
 console.log(":: sum", sum)
+
+module.exports = add;
